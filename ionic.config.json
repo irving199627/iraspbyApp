@@ -1,0 +1,7 @@
+{
+  "name": "domotica",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
