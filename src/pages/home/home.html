@@ -1,14 +1,93 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
-    </ion-title>
-  </ion-navbar>
+    <ion-navbar>
+        <ion-title>
+            Domótica
+        </ion-title>
+    </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="fondo">
+    <ion-list *ngIf="luz1Ref">
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz1}" (click)="_fbp.updateLuzCocina(!luz1)">
+                      <ion-icon name="bulb"></ion-icon>
+                  </button>
+            </ion-thumbnail>
+            <h2>Luz 1</h2>
+            <p [ngClass]="{'encendido':luz1}">{{ encendido }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz2}" (click)="_fbp.updateLuzSala(!luz2)">
+                          <ion-icon name="bulb"></ion-icon>
+                      </button>
+            </ion-thumbnail>
+            <h2>Luz 2</h2>
+            <p [ngClass]="{'encendido':luz2}">{{ encendido2 }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz3}" (click)="_fbp.updateLuz4(!luz3)">
+                              <ion-icon name="bulb"></ion-icon>
+                          </button>
+            </ion-thumbnail>
+            <h2>Luz 3</h2>
+            <p [ngClass]="{'encendido':luz3}">{{ encendido3 }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz4}" (click)="_fbp.updateLuz5(!luz4)">
+                                  <ion-icon name="bulb"></ion-icon>
+                              </button>
+            </ion-thumbnail>
+            <h2>Luz 4</h2>
+            <p [ngClass]="{'encendido':luz4}">{{ encendido4 }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz5}" (click)="_fbp.updateLuz6(!luz5)">
+                                      <ion-icon name="bulb"></ion-icon>
+                                  </button>
+            </ion-thumbnail>
+            <h2>Luz 5</h2>
+            <p [ngClass]="{'encendido':luz5}">{{ encendido5 }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz6}" (click)="_fbp.updateLuz7(!luz6)">
+                                      <ion-icon name="bulb"></ion-icon>
+                                  </button>
+            </ion-thumbnail>
+            <h2>Luz 6</h2>
+            <p [ngClass]="{'encendido':luz6}">{{ encendido6 }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz7}" (click)="_fbp.updateLuz8(!luz7)">
+                                      <ion-icon name="bulb"></ion-icon>
+                                  </button>
+            </ion-thumbnail>
+            <h2>Luz 7</h2>
+            <p [ngClass]="{'encendido':luz7}">{{ encendido7 }}</p>
+        </ion-item>
+
+        <ion-item>
+            <ion-thumbnail item-start>
+                <button ion-button round outline large color="dark" icon-only [ngClass]="{'encendido':luz8}" (click)="_fbp.updateLuz9(!luz8)">
+                                      <ion-icon name="bulb"></ion-icon>
+                                  </button>
+            </ion-thumbnail>
+            <h2>Luz 8</h2>
+            <p [ngClass]="{'encendido':luz8}">{{ encendido8 }}</p>
+        </ion-item>
+    </ion-list>
+
+
 </ion-content>
